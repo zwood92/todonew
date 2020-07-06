@@ -37,6 +37,7 @@ body {
 button,
 input[type="checkbox"] {
   outline: none;
+  border: black;
 }
 
 .hidden {
@@ -120,6 +121,7 @@ input[type="checkbox"] {
 
 label[for='toggle-all'] {
   display: none;
+  border: black;
 }
 
 .toggle-all {
@@ -129,13 +131,13 @@ label[for='toggle-all'] {
   width: 60px;
   height: 34px;
   text-align: center;
-  border: none; /* Mobile Safari */
+  border: black; /* Mobile Safari */
 }
 
 .toggle-all:before {
   content: '❯';
   font-size: 22px;
-  color: #e6e6e6;
+  color: grey;
   padding: 10px 27px 10px 27px;
 }
 
@@ -352,7 +354,9 @@ html .clear-completed:active {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   .toggle-all,
   .todo-list li .toggle {
-    background: none;
+    background: lightgray;
+    border: grey;
+    align-self: center;
   }
 
   .todo-list li .toggle {
